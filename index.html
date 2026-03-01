@@ -1,165 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Raghavi S | Portfolio</title>
+    <title>Raghavi S | Software Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7fc;
-            color: #333;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
         }
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
+        body{
+            background:#0f172a;
+            color:white;
         }
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+            background:#0f172a;
+            position:fixed;
+            width:100%;
         }
 
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
+        nav h2{
+            color:#38bdf8;
         }
 
-        ul {
-            line-height: 1.8;
+        nav ul{
+            display:flex;
+            list-style:none;
         }
 
-        .skills span {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 8px 15px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
+        nav ul li{
+            margin-left:20px;
         }
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 15px;
+        nav ul li a{
+            color:white;
+            text-decoration:none;
         }
 
-        a {
-            color: #3498db;
-            text-decoration: none;
+        nav ul li a:hover{
+            color:#38bdf8;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .hero{
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+        }
+
+        .highlight{
+            color:#38bdf8;
+        }
+
+        .hero p{
+            margin-top:20px;
+            font-size:20px;
+            max-width:600px;
+        }
+
+        .btn{
+            margin-top:30px;
+            padding:12px 25px;
+            background:#38bdf8;
+            border:none;
+            border-radius:25px;
+            color:black;
+            font-weight:bold;
+            text-decoration:none;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:40px;
+            color:#38bdf8;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:25px;
+            margin-bottom:20px;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            background:#334155;
+        }
+
+        .skills span{
+            display:inline-block;
+            margin:8px;
+            padding:10px 18px;
+            background:#38bdf8;
+            color:black;
+            border-radius:20px;
+            font-weight:bold;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#0f172a;
+            color:#94a3b8;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:35px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Raghavi S</h1>
-    <p>Aspiring Software Developer</p>
-    <p>Email: raghavi.s2006@gmail.com | Phone: 6383104060</p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        Motivated software developer fresher with foundational knowledge in C, Python, and Java.
-        Hands-on experience through academic projects and a full-stack internship.
-        Strong interest in building reliable and efficient software solutions.
-        Looking for an entry-level software developer role in a growth-oriented organization.
-    </p>
-</section>
-
-<section>
-    <h2>Education</h2>
+<nav>
+    <h2>Raghavi</h2>
     <ul>
-        <li><strong>B.E - Computer Science and Engineering</strong><br>
-            Panimalar Engineering College (2023 - 2027)
-        </li>
-        <li><strong>Higher Secondary Education</strong><br>
-            St. John’s Matriculation Higher Secondary School (2021 - 2023)
-        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
+</nav>
+
+<div class="hero">
+    <h1>Hi, I'm <span class="highlight">Raghavi S</span></h1>
+    <p>Aspiring Software Developer passionate about building efficient and reliable software solutions.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        Motivated Computer Science Engineering student with knowledge in C, Python, Java, and SQL.
+        Completed a Full Stack Development internship and developed a machine learning-based
+        crop disease detection system.
+    </div>
 </section>
 
-<section>
+<section id="skills">
     <h2>Technical Skills</h2>
-    <div class="skills">
+    <div class="card skills">
         <span>C</span>
         <span>Python</span>
         <span>Java</span>
         <span>SQL</span>
-        <span>Basic Web Development</span>
-        <span>Object Oriented Programming</span>
+        <span>Web Development</span>
+        <span>OOP</span>
     </div>
 </section>
 
-<section>
+<section id="project">
     <h2>Project</h2>
-    <h3>Smart Crop Disease Detection and Yield Forecasting System</h3>
-    <p>
-        Developed a system to detect crop diseases early and reduce crop loss.
-        Implemented using Python and basic machine learning techniques.
-        The system provided accurate disease identification and improved yield prediction.
-    </p>
+    <div class="card">
+        <strong>Smart Crop Disease Detection & Yield Forecasting System</strong><br><br>
+        Developed using Python and Machine Learning techniques to identify plant diseases early
+        and improve yield prediction accuracy.
+    </div>
 </section>
 
-<section>
+<section id="internship">
     <h2>Internship</h2>
-    <p>
+    <div class="card">
         <strong>Web Developer Intern</strong><br>
-        Eagle HiTech Softclou Pvt. Ltd.
-    </p>
-    <ul>
-        <li>Completed Full Stack Development internship.</li>
-        <li>Worked with front-end and back-end technologies.</li>
-        <li>Gained real-time project exposure.</li>
-    </ul>
+        Eagle HiTech Softclou Pvt. Ltd.<br><br>
+        • Worked on front-end and back-end development<br>
+        • Gained real-time project exposure<br>
+        • Improved technical and problem-solving skills
+    </div>
 </section>
 
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li>NPTEL - Introduction to Machine Learning</li>
-        <li>NPTEL - Programming in Java</li>
-        <li>NASSCOM - Acquiring Data</li>
-        <li>Infosys Springboard - Java Programming Fundamentals</li>
-        <li>TATA Forage - Data Visualisation</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Profiles</h2>
-    <p>
-        LinkedIn: 
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        📧 Email: raghavi.s2006@gmail.com<br><br>
+        🔗 LinkedIn:
         <a href="https://www.linkedin.com/in/raghavi-s-4304113a8" target="_blank">
             raghavi-s-4304113a8
-        </a>
-    </p>
-
-    <p>
-        HackerRank: 
+        </a><br><br>
+        💻 HackerRank:
         <a href="https://www.hackerrank.com/profile/raghavi_s2006" target="_blank">
             raghavi_s2006
         </a>
-    </p>
+    </div>
 </section>
 
 <footer>
-    © 2026 Raghavi S | Portfolio
+    © 2026 Raghavi S | Designed for Opportunities 🚀
 </footer>
 
 </body>
