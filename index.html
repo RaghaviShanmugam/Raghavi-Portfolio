@@ -1,200 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Raghavi S | Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f4f7f9;
+            background-color: #f4f6f9;
             color: #2c3e50;
         }
 
         nav {
-            background-color: #0f4c5c;
-            padding: 15px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: #1e2a38;
+            padding: 15px;
+            text-align: center;
         }
 
-        nav h2 {
-            color: #f4d35e;
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
+        nav a {
             color: white;
-            font-weight: 500;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
         }
 
-        nav ul li a:hover {
-            color: #f4d35e;
+        nav a:hover {
+            color: #2e86de;
         }
 
         section {
-            padding: 70px 8%;
+            padding: 60px 10%;
         }
 
-        h2 {
+        h1, h2 {
             text-align: center;
-            margin-bottom: 40px;
-            color: #0f4c5c;
+            color: #1e2a38;
         }
 
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 60px;
-            padding: 60px 8%;
+        .profile {
+            text-align: center;
+            margin-top: 40px;
         }
 
-        .hero img {
-            width: 220px;
+        .profile img {
+            width: 180px;
             border-radius: 50%;
-            border: 4px solid #f4d35e;
+            border: 4px solid #2e86de;
         }
 
-        .hero-text h1 {
-            font-size: 40px;
-            margin: 0;
-        }
-
-        .highlight {
-            color: #0f4c5c;
-        }
-
-        .btn {
+        .resume-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 22px;
-            background-color: #0f4c5c;
+            margin-top: 15px;
+            padding: 8px 18px;
+            background-color: #2e86de;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 5px;
         }
 
-        .card {
+        .content-box {
+            margin-top: 25px;
+            line-height: 1.7;
             background: white;
             padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 6px;
         }
 
-        .skills span {
-            display: inline-block;
-            background: #f4d35e;
-            padding: 6px 14px;
-            border-radius: 20px;
-            margin: 6px;
-            font-size: 14px;
+        .project-box {
+            margin-top: 20px;
+            padding: 25px;
+            background: white;
+            border-radius: 6px;
         }
 
-        .project img {
+        .project-box img {
             width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         footer {
+            background-color: #1e2a38;
+            color: white;
             text-align: center;
             padding: 20px;
-            background-color: #0f4c5c;
-            color: white;
+            margin-top: 40px;
         }
 
-        @media(max-width:900px){
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
     </style>
 </head>
 
 <body>
 
 <nav>
-    <h2>Raghavi</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#internship">Internship</a></li>
-        <li><a href="certificates.html">Certifications</a></li>
-    </ul>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Project</a>
+    <a href="#internship">Internship</a>
+    <a href="certificates.html">Certifications</a>
 </nav>
 
-<div class="hero">
-    <img src="profile.jpeg" alt="Raghavi Photo">
-    <div class="hero-text">
-        <h1>Hello, I'm <span class="highlight">Raghavi S</span></h1>
-        <p>Computer Science Engineering student passionate about developing practical software solutions and exploring Machine Learning applications.</p>
-        <a href="Raghavi_Resume.pdf" class="btn" download>Download Resume</a>
-    </div>
-</div>
+<section class="profile">
+    <h1>Raghavi S</h1>
+    <img src="profile.jpeg" alt="Profile Photo">
+    <p>Computer Science Engineering Student</p>
+    <a href="Raghavi_Resume.pdf" download class="resume-btn">Download Resume</a>
+</section>
 
 <section id="about">
     <h2>About Me</h2>
-    <div class="card">
-        I am pursuing B.E in Computer Science and Engineering. 
-        I have strong foundations in C, Python, Java and SQL. 
-        I focus on writing clean code, understanding problem-solving logic, 
-        and building meaningful academic projects.
+    <div class="content-box">
+        I am currently pursuing B.E in Computer Science and Engineering.
+        I have strong foundations in C, Python, Java, and SQL.
+        I am passionate about developing practical software solutions
+        and exploring Machine Learning applications.
     </div>
 </section>
 
 <section id="skills">
     <h2>Technical Skills</h2>
-    <div class="card skills">
-        <span>C Programming</span>
-        <span>Python</span>
-        <span>Java</span>
-        <span>SQL</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Machine Learning Basics</span>
-        <span>OOP Concepts</span>
+    <div class="content-box">
+        <ul>
+            <li>C Programming</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>HTML & CSS</li>
+            <li>Machine Learning Basics</li>
+            <li>Object Oriented Programming</li>
+        </ul>
     </div>
 </section>
 
 <section id="project">
     <h2>Academic Project</h2>
-    <div class="card project">
-        <img src="project1.jpeg" alt="Smart Crop Project">
+    <div class="project-box">
         <h3>Smart Crop Disease Detection & Yield Prediction</h3>
+
         <p>
-        Developed a Machine Learning model to detect plant diseases 
-        using image-based analysis and predict crop yield trends. 
-        The system helps farmers identify issues early and make 
-        data-driven agricultural decisions.
+        Developed a Machine Learning based system to detect plant diseases 
+        using image analysis and predict crop yield trends.
+        The system helps farmers take early preventive action 
+        and improve agricultural productivity.
         </p>
 
         <p><strong>Technologies Used:</strong> Python, Machine Learning, Data Analysis</p>
+
+        <img src="project1.jpeg" alt="Project Image">
     </div>
 </section>
 
 <section id="internship">
     <h2>Internship Experience</h2>
-    <div class="card">
+    <div class="content-box">
         <h3>Full Stack Development Intern</h3>
         <p><strong>Eagle HiTech Softclou Pvt Ltd</strong></p>
-        <p>
-        Assisted in frontend and backend development tasks, 
-        gained exposure to real-time web development workflow, 
-        and improved debugging and problem-solving skills.
-        </p>
+
+        <ul>
+            <li>Worked on frontend and backend fundamentals</li>
+            <li>Understood real-time software development workflow</li>
+            <li>Improved debugging and problem-solving skills</li>
+        </ul>
     </div>
 </section>
 
