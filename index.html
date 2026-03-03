@@ -192,6 +192,28 @@ section h2::after{
   padding:10px;
   border-radius:10px;
 }
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.contact-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2);
+  background-color: var(--primary);
+}
 
 /* FOOTER */
 footer{
@@ -227,7 +249,7 @@ html{ scroll-behavior:smooth; }
 </div>
 </div>
 <p style="max-width:800px;margin:30px auto;text-align:justify;">
-Motivated Computer Science Engineering student with strong foundations in C, Python, Java and SQL. Passionate about Machine Learning and developing real-world applications that solve practical problems. Seeking opportunities to grow as a full stack developer and AI enthusiast.
+I am a passionate and dedicated Computer Science Engineering student with a strong foundation in programming, database management, and software development principles. I have hands-on experience in developing academic and mini projects using Python, Java, HTML, CSS, and JavaScript. My key interest lies in Machine Learning and building intelligent systems that solve real-world problems. Through my project on Smart Crop Disease Detection, I explored how AI can assist farmers in identifying plant diseases early and improving agricultural productivity. I am continuously improving my problem-solving skills and expanding my knowledge in full stack development and data-driven technologies. During my internship experience, I gained exposure to real-time development workflows, collaboration practices, and debugging techniques. I am highly motivated, adaptable, and eager to learn emerging technologies that enhance my technical expertise. My goal is to grow as a software developer and contribute meaningfully to innovative and impactful technology solutions.
 </p>
 </section>
 
@@ -315,12 +337,39 @@ Motivated Computer Science Engineering student with strong foundations in C, Pyt
 </form>
 </div>
 </section>
+<section id="thankyou" style="padding: 40px 20px; background-color: var(--bg); text-align: center;">
+
+  <h2>THANK YOU FOR VISITING MY PORTFOLIO!</h2>
+  <p>If you would like to connect with me, feel free to reach out through the platforms below.</p>
+
+  <div style="margin-top: 25px; display: flex; justify-content: center; gap: 30px;">
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/raghavi-s-4304113a8?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+
+    <!-- Gmail -->
+    <a href="raghavi.s2006@gmail.com" class="contact-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/RaghaviShanmugam" target="_blank" class="contact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </a>
+
+  </div>
+
+</section>
 
 <footer>
 © 2026 Raghavi S | All Rights Reserved
 </footer>
 
+
 </body>
 </html>
+
 
 
